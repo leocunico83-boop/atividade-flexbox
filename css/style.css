@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #111111;
 }
 
 /*cabeçalho*/
@@ -15,7 +15,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 25px;
-    background-color: #243447;
+    background-color: #111111;
     color: white;
 }
 /*menu*/
@@ -51,12 +51,12 @@ section {
 .imagens {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 100px;
+    align-items:center;
+    gap: 50px;
+    width: 300px;
 }
 .imagens img {
-    width: 30%;
+    width: 80%;
     height: 150%;
     object-fit: contain;
 }
