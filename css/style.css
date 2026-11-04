@@ -1,62 +1,89 @@
-{
+
+/* 1. CONFIGURAÇÕES GERAIS */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     background-color: #111111;
 }
 
-/*cabeçalho*/
+/* 2. CABEÇALHO */
 header {
-    display: inline;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 25px;
     background-color: #111111;
     color: white;
 }
-/*menu*/
+
+/* 3. MENU DE NAVEGAÇÃO */
 nav ul {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 25px;
     list-style: none;
-    }
+}
+
 nav a {
     color: white;
     text-decoration: none;
 }
-/*Organiza as três sessões*/
-main{
+
+/* 4. CONTAINER PRINCIPAL */
+main {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: center;
     gap: 20px;
+    width: 100%;
     padding: 30px;
 }
-/*Estilo das sessões*/
+
+/* 5. ITENS DO CONTAINER (SEÇÕES) */
 section {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     gap: 20px;
-    flex: 1;
+
+    flex: 1 1 300px;
+    min-width: 0;
+
     padding: 20px;
     background-color: white;
     border-radius: 10px;
     text-align: center;
 }
-/*Organiza imagens*/
+
+/* 6. CONTAINER DAS IMAGENS */
 .imagens {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
-    align-items:center;
-    gap: 50px;
-    width: 300px;
+    align-items: stretch;
+    align-content: center;
+    gap: 10px;
+    width: 100%;
 }
+
+/* 7. IMAGENS DOS PRODUTOS */
 .imagens img {
-    width: 80%;
-    height: 150%;
+    flex: 1 1 0;
+    width: 0;
+    min-width: 0;
+    height: 240px;
     object-fit: contain;
 }
